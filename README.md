@@ -1,38 +1,59 @@
-📌 Project Title
-
-Real Estate Management System – Salesforce
+🏡 Real Estate CRM Automation – Salesforce
 
 
-🧠 Problem Statement
+📌 Overview
 
-Automate property sales lifecycle and commission calculation.
+A custom-built Salesforce CRM solution for managing real estate sales lifecycle with automated business logic using Apex triggers and validation rules.
 
+🔹 Objects Used
 
-⚙️ Features
-
-Property Management
-
-Opportunity linking
-
-Auto Status Update
-
-Auto Commission Calculation
-
-Apex Trigger-based Automation
+Custom Objects
+Property__c
+Commission__c
+Site_Visit__c
+Standard Objects
+Opportunity
+Task
 
 
-🛠 Tech Stack
+🔹 Key Automations Implemented
 
-Salesforce Sales Cloud
+1️⃣ Opportunity → Closed Won Automation
 
-Apex
 
+When Opportunity stage changes to Closed Won:
+Property status automatically updates to Sold
+2% commission record is auto-generated
+Ensures no duplicate commission creation
+
+
+2️⃣ Site Visit Automation
+
+When a Site Visit is created:
+Automatically creates follow-up Task
+Updates Opportunity stage to Negotiation/Review
+Prevents visit scheduling if property is already sold
+
+
+3️⃣ Validation Rule
+
+Blocks site visit creation if Property Status = Sold
+Maintains business data integrity
+
+
+🔹 Technologies Used
+
+Apex Triggers
 SOQL
+DML Operations
+Validation Rules
+Lightning Record Pages
+Custom Object Relationships
 
-Lightning Experience
 
-🔁 Business Flow
+🔹 Business Impact
 
-Opportunity → Closed Won
-→ Property Status Updated
-→ Commission Created Automatically
+Eliminates manual status updates
+Automates commission calculations
+Prevents invalid sales operations
+Streamlines real estate deal lifecycle
