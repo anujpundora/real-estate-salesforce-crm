@@ -5,6 +5,17 @@
 
 A custom-built Salesforce CRM solution for managing real estate sales lifecycle with automated business logic using Apex triggers and validation rules.
 
+
+
+📸 System Screenshots
+
+Opportunity Closed Won
+Property Auto Updated
+Commission Created
+Validation Rule
+Site Visit Task Automation
+
+
 🔹 Objects Used
 
 Custom Objects
